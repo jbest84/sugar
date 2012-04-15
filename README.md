@@ -1,4 +1,6 @@
 # Sugar - Dojo AMD plugin for loading coffeescript
+
+CoffeeScript Module:
 ```coffeescript
 define('some/coffeescript/module', [], () ->
   module = 
@@ -6,8 +8,10 @@ define('some/coffeescript/module', [], () ->
   )
 ```
 
+In your javascript:
 ```javascript
 require(['sugar/cs!./some/coffeescript/module'], function(module) {
   // Loads your coffeescript files
+  module.someFunc(100);
 });
 ```
