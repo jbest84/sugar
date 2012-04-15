@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script src="../libs/coffee-script.js"></script>
+        <script src="../../dojosrc/dojo/dojo.js" data-dojo-config="isDebug: true, parseOnLoad: false, packages: [{ name: 'sugar', location: '../../../sugar'}]"></script>
+    </head>
+    <body>
+        <div>foo</div>
+        <script type="text/javascript">
+            require(['sugar/cs!./mod1'], function (m) {
+                console.log(m.sayHi('Jason'));
+            });
+        </script>
+    </body>
+</html>
